@@ -1,0 +1,14 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.poll-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.summary-item {
+  margin-bottom: 20px;
+}

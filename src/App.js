@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PollForm from './components/PollForm';
+const steps = [
+  {
+    title: "How was your week overall?",
+    options: [
+      { icon: "👍", label: "Good" },
+      { icon: "🤔", label: "Okay" },
+      { icon: "👎", label: "Bad" },
+    ],
+  },
+  {
+    title: "How was your productivity?",
+    options: [
+      { icon: "🚀", label: "High" },
+      { icon: "👌", label: "Average" },
+      { icon: "🐢", label: "Low" },
+    ],
+  },
+];
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PollForm steps={steps} />
     </div>
   );
-}
+};
 
 export default App;
